@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "types": ["@intlify/vite-plugin-vue-i18n/client"],
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      // "~/*": ["./*"],
+      "~/*": ["./public/*"],
+      "@/*": ["./src/*"]
+    },
+    "module": "es2020",
+    "target": "es6"
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["./src/**/*"]
+}

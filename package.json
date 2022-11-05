@@ -1,0 +1,41 @@
+{
+  "name": "seonamri",
+  "version": "0.0.1",
+  "private": true,
+  "description": "SeonAmRi WEB (with vite2)",
+  "scripts": {
+    "build": "vite build",
+    "build.dev": "vite build --mode development",
+    "dev": "vite --mode development",
+    "local": "vite --mode vlocal",
+    "preview": "vite preview --mode lab"
+  },
+  "dependencies": {
+    "click-outside-vue3": "^4.0.1",
+    "core-js": "^3.6.5",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.5",
+    "lodash": "^4.17.21",
+    "pinia": "^2.0.22",
+    "register-service-worker": "^1.7.2",
+    "v-money3": "^3.22.1",
+    "vue": "^3.2.40",
+    "vue-daum-postcode": "^1.1.0",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.1.5",
+    "vue-the-mask": "^0.11.1"
+  },
+  "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^5.0.1",
+    "@types/node": "18.8.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "esbuild": "^0.14.43",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "prettier": "2.7.0",
+    "rollup-plugin-esbuild": "^4.9.1",
+    "sass": "^1.52.3",
+    "vite": "^2.9.9"
+  }
+}
