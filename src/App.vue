@@ -14,6 +14,13 @@ import Header from '@/components/layout/Header.vue';
 <style lang="scss">
 @import '@/scss/main.scss';
 @import '@/scss/utils.scss';
+
+@include mobile {
+    * {
+      font-size: 13px;
+    }
+}
+
 body {
   margin: 0;
 }
