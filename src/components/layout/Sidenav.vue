@@ -61,8 +61,9 @@ function getImageUrl(name) {
         //     padding: em(50) em(50);
         //     transition:1s;
         // }
-        width: em(450);
-        transform: translate3d(-28.125em, 0, 0);
+        // width: em(450);
+        width: 60vw;
+        // transform: translate3d(-28.125em, 0, 0);
         height: 100%;
         box-sizing: border-box;
         background-color: #ffffff;
