@@ -12,7 +12,7 @@ function getImageUrl(name) {
         <div class="about flex align_items_center justify_content_center">
            <div>
                 <h1>Menu</h1>
-                <span>매일 만들어내는 백금당커피, 로얄밀크티, 카스테라</span><br/>
+                <span>매일 만들어내는 선암리커피, 로얄밀크티, 카스테라</span><br/>
                 <span>그리고 주문즉시 만들어 내는 따뜻한 선암리 케이크</span>
            </div>
         </div>

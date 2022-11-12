@@ -21,11 +21,19 @@ import Header from '@/components/layout/Header.vue';
     }
 }
 
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 body {
   margin: 0;
 }
 
 .layout {
+  padding: 0 em(10);
   margin: em(120) 0 0 0;
 } 
 </style>

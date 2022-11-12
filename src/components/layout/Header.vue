@@ -20,7 +20,7 @@ function openSidenav() {
 }
 
 function closeSidenav() {
-    sidenavToggle.value = false;
+    sidenavToggle.value = !sidenavToggle.value;
 }
 
 function getImageUrl(name) {
@@ -36,17 +36,17 @@ function getImageUrl(name) {
         </div>
         <div class="nav_wrap">
             <div class="nav_menus">
-                <div :class="`${routerName === 'main' ? 'fw_700' : ''}`" @click="movPage('main')">HOME</div>
-                <div :class="`${routerName === 'about' ? 'fw_700' : ''}`" @click="movPage('about')">선암리</div>
-                <div :class="`${routerName === 'menu' ? 'fw_700' : ''}`" @click="movPage('menu')">메뉴</div>
-                <div :class="`${routerName === 'store' ? 'fw_700' : ''}`" @click="movPage('store')">매장</div>
-                <div :class="`${routerName === 'franchise' ? 'fw_700' : ''}`" @click="movPage('franchise')">가맹문의</div>
+                <div :class="`pointer no_text_select ${routerName === 'main' ? 'fw_700' : ''}`" @click="movPage('main')">HOME</div>
+                <div :class="`pointer no_text_select ${routerName === 'about' ? 'fw_700' : ''}`" @click="movPage('about')">선암리</div>
+                <div :class="`pointer no_text_select ${routerName === 'menu' ? 'fw_700' : ''}`" @click="movPage('menu')">메뉴</div>
+                <div :class="`pointer no_text_select ${routerName === 'store' ? 'fw_700' : ''}`" @click="movPage('store')">매장</div>
+                <div :class="`pointer no_text_select ${routerName === 'franchise' ? 'fw_700' : ''}`" @click="movPage('franchise')">가맹문의</div>
             </div>
         </div>
-        <span class="material-symbols-outlined mobile_menu" @click="openSidenav">menu</span>
+        <span class="material-icons mobile_menu pointer" @click="openSidenav">menu</span>
     </div>
   </header>
-  <Sidenav v-if="sidenavToggle" @closeSidenav="closeSidenav"/>
+  <Sidenav v-if="sidenavToggle" :sidenavToggle="sidenavToggle" @closeSidenav="closeSidenav"/>
 </template>
 
 <style lang="scss" scoped>
@@ -54,6 +54,9 @@ function getImageUrl(name) {
 
 
 @include mobile {
+    header {
+        padding: em(20)em(10) !important;
+    }
     .nav_wrap {
         display: none !important;
     }

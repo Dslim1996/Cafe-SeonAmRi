@@ -1,4 +1,11 @@
 <script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+function movPage(pageName) {
+  router.push({name : pageName})
+}
 
 function getImageUrl(name) {
   return import.meta.env.BASE_URL + name;
@@ -28,7 +35,7 @@ function getImageUrl(name) {
           <span class="fw_600 color_gray">Homemade-style desserts and drinks Coffe</span><br/><br/>
           <span>매장에서 매일 만들어내는 신선한 디저트와 음료</span><br/>
           <span>그리고 카페 선암리 만의 레시피로 만들어지는 시그니처 커피</span><br/>
-          <span>메뉴보기></span>
+          <span class="pointer" @click="movPage('menu')">메뉴보기></span>
         </div>
       </div>
     </div>
@@ -38,7 +45,7 @@ function getImageUrl(name) {
         <div style="flex: 4; text-align: left;">
           <span class="fw_600">Our space Our store</span><br/>
           <span class="color_gray">가까운곳의 카페 선암리를 만나보세요</span><br/>
-          <span>매장보기></span>
+          <span class="pointer" @click="movPage('store')">매장보기></span>
         </div>
       </div>
     </div>
@@ -48,7 +55,7 @@ function getImageUrl(name) {
         <div style="flex: 4; text-align: left;">
           <span class="fw_600">Let's be together</span><br/>
           <span class="color_gray">카페 선암리와 함께하실 예비 점주님을 기다립니다</span><br/>
-          <span>가맹문의></span>
+          <span class="pointer" @click="movPage('franchise')">가맹문의></span>
         </div>
       </div>
     </div>
